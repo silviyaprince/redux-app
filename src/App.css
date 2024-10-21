@@ -1,127 +1,171 @@
-.flex-container{
+.App {
+  background-color: white;
+  padding: auto;
+}
+
+.flex-container {
   display: flex;
-  flex-direction:column;
-  background-color: rgb(235, 240, 243);
+  flex-direction: column;
+  background-color: white;
   width: 70vw;
-  height: 80vh;
+  height: 30vh;
   margin: auto;
-  margin-top: 80px;
-  
+
+  margin-bottom: 30px;
+  padding: 25px;
+  box-shadow: 5px 10px 10px rgba(25, 86, 84, 0.1);
 }
 
-.flex-top{
-  display :flex;
- margin-top: 100px;
- align-items: center;
- 
+.flex-top {
+  display: flex;
+
+  align-items: center;
   flex-direction: row;
-  gap:30px;
-  justify-content:space-around;
-
-
- 
+  gap: 30px;
+  justify-content: space-between;
 }
-.image{
+.image {
   flex-shrink: 1;
 }
 
-@media screen and (max-width: 800px) {
-  .flex-top{
-    display :flex;
-   margin-top: 100px;
-   align-items: center;
-   
-    flex-direction: row;
-    gap:30px;
-    margin-right: 20px;
-  
-  
-   
+@media screen and (max-width: 700px) {
+  .flex-bottom {
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  .flex-container{
-    
-    justify-content: center;
-  width: auto;
-  height: 100vh;
-  margin-top: 0px;
-}
-  .flex-top2{
-    width:200px;
-    height:auto;
 
+  .f3 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
- 
-  .f2{
+  .flex-top {
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 20px;
+  }
+  .numberinput-container {
+    width: 100px;
+  }
+  .flex-container {
+    flex-shrink: 1;
+    width: auto;
+    height: 40vh;
+    margin-top: 0px;
+  }
+  .flex-top2 {
+    width: 300px;
+    height: auto;
+  }
+
+  .f2 {
     margin-top: 100px;
   }
-  .f3{
-    margin-bottom: 70px;
+
+  .text2 {
+    font-weight: 400;
+
+    margin-left: 460px;
+    text-align: center;
   }
 }
-.numberinput{
-width:70px;
-background-color: white;
-}
-.flex-top2{
-  display:flex;
+
+.flex-top2 {
+  display: flex;
   flex-direction: column;
-  width:400px;
-
+  width: 400px;
 }
 
-
-.product-info{
-  
-  font-size:medium;
+.product-info {
+  font-size: medium;
   font-weight: 500;
 }
 
-.flextop-3{
+.flextop-3 {
   display: flex;
   flex-direction: column;
   gap: 100px;
   margin-right: 10px;
-  align-items: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.flex-bottom{
+.flex-bottom {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
-  margin-right: 70px;
+  justify-content: space-around;
+  padding-left: 300px;
+  padding-right: 300px;
 }
-
-.f1{
+.numberinput-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 120px;
+  /* Adds space between number input and flextop-3 */
+}
+.textfield {
+  background-color: white;
+  width: 100px;
+}
+.f1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
   font-family: "Arima", system-ui;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
+  font-size: large;
 }
 
-.f2{
+.f2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Arima", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.f3{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 20px;
   font-family: "Arima", system-ui;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: larger;
+  font-size: large;
+}
+.f3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+  margin-top: 20px;
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: xx-large;
 }
 
+.text2 {
+  color: red;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.text1 {
+  margin-bottom: 50px;
+}
+
+.product-info2 .MuiIconButton-root {
+  margin-left: 25px; /* Adjust the value as needed */
+}

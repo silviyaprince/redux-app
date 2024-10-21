@@ -1,13 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import { Counter } from './Counter';
-import { Cartpage } from './Cartpage';
-
+import "./App.css";
+import { Checkout } from "./Checkout";
+import { bg } from "./image";
 function App() {
   return (
-    <div className="App">
-     {/* <Counter/> */}
-     <Cartpage/>
+    <div className="App" style={{ backgroundImage: `url(${bg})` }}>
+      <Checkout />
     </div>
   );
 }
